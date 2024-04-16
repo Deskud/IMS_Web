@@ -1,11 +1,12 @@
 var Opensidebar= 'true';
 
+
 toggleButton.addEventListener( 'click', (event) => {
     event.preventDefault();
 
     if(Opensidebar){
         dashboardSideBar.style.width = '5%';
-        dashboardSideBar.style.transition = '0.7s all';
+        dashboardSideBar.style.transition = '0.3s all';
         dashboardContent_Container.style.width = '100%';
         dashboardLogo.style.fontSize = '15px';
         UserImg.style.width = '15px';

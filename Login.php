@@ -11,7 +11,7 @@
        $password = $_POST['password'];
 
         $query = 'SELECT * FROM admin WHERE admin.email = "'. $username .'" AND admin.password = "'. $password .'" ';
-        $stmt = $conn -> prepare($query);
+        $stmt = $db1 -> prepare($query);
         $result = $stmt->execute();
         
 

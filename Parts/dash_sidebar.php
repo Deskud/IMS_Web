@@ -8,7 +8,7 @@
                 </div>
                 <div class="dashboardSideBar_Menu">
                     <ul class="dashboardSideBar_Menu_lists">
-                        <li class = "menuActive">
+                        <li>
                             <a href="Dashboard.php"><i class="fa-solid fa-gauge "></i><span class="menuText"> Dashboard</span></a>
                         </li>
                         <li>

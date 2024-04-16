@@ -346,8 +346,19 @@ div.dashboardContent{
   padding: 50px 10px 10px 10px;
 }
 
-div.dashboardContent_Main{
+/* div.dashboardContent_Main{
   background: rgb(186, 186, 186);
   min-height: 700px;
   height: 500px;
+} */
+
+
+  th, td{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid rgb(13, 13, 13);
+    
+}
+
+table{
+    background-color: aliceblue;
 }

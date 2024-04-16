@@ -21,11 +21,12 @@
             <div class="dashboardContent_Container" id="dashboardContent_Container">
             <?php include ('Parts/dash_topnav.php')?>
                 <div class="dashboardContent">
+                <iframe src = "http://127.0.0.1:1880/ui" width = "700" height= "700"></iframe>
                     <div class="dashboardContent_Main">
 
                     </div>
                 </div>
-
+                    
             </div>
         </div>
     <script src="DashboardScripts.js"></script>

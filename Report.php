@@ -22,7 +22,7 @@
             <?php include ('Parts/dash_topnav.php')?>
                 <div class="dashboardContent">
                     <div class="dashboardContent_Main">
-
+                        <?php include ('Parts/TableHistory.php')?>
                     </div>
                 </div>
 
