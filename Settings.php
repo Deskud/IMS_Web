@@ -1,16 +1,17 @@
 <?php
     session_start();
 
-    $user = ( $_SESSION['admin']);
-    if(!isset($_SESSION['admin'])) header('location: Login.php');
-     $user = $_SESSION['admin'];
+    $user = ( $_SESSION['admins']);
+    if(!isset($_SESSION['admins'])) header('location: Login.php');
+     $user = $_SESSION['admins'];
 
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <title> Vending Machine IMS </title>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="stylesheet" type="text/css" href="css/IMSstyle.css">
         <script src="https://kit.fontawesome.com/883b8ee9d9.js" crossorigin="anonymous"></script>
         

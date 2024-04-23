@@ -2,7 +2,7 @@
 
     session_start();
 
-    if(isset($_SESSION['admin'])) header('location: Dashboard.php');
+    if(isset($_SESSION['admins'])) header('location: Dashboard.php');
 
 
     if($_POST){
@@ -10,7 +10,7 @@
        $username = $_POST['username'];
        $password = $_POST['password'];
 
-        $query = 'SELECT * FROM admin WHERE admin.email = "'. $username .'" AND admin.password = "'. $password .'" ';
+        $query = 'SELECT * FROM admins WHERE admins.email = "'. $username .'" AND admins.password = "'. $password .'" ';//Kinukuha sa database yung email at password pag di existing di ma a-access dashboard
         $stmt = $db1 -> prepare($query);
         $result = $stmt->execute();
         
@@ -18,7 +18,7 @@
         if($stmt->rowCount( )> 0){
             $stmt->setFetchMode(PDO::FETCH_ASSOC);
             $user = $stmt->fetchAll()[0];
-            $_SESSION['admin'] = $user;
+            $_SESSION['admins'] = $user;
            
 
             header('Location: Dashboard.php');
@@ -27,16 +27,12 @@
         }else $error_message = 'Incorrect password and username';
         
     }
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <title> Vending Machine IMS </title>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/IMSStyle.css">
     </head>
     <body id="loginBody">

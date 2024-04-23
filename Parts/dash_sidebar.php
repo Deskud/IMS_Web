@@ -12,7 +12,7 @@
                             <a href="Dashboard.php"><i class="fa-solid fa-gauge "></i><span class="menuText"> Dashboard</span></a>
                         </li>
                         <li>
-                            <a href="Report.php"><i class="fa-solid fa-arrow-trend-up"></i><span class="menuText" > Sales Report</span></a>
+                            <a href="Report.php"><i class="fa-solid fa-arrow-trend-up"></i><span class="menuText" > Purchase History</span></a>
                         </li>
                         <li >
                             <a href="Notif.php"><i class="fa-solid fa-bell"></i><span class="menuText" > Notification</span></a>

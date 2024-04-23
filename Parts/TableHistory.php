@@ -2,7 +2,7 @@
 require 'PHP_Database/conne.php';
 
 // $query = "SELECT* FROM product"; //"product" pangalan ng database table
-$result = $db1->query("SELECT*FROM product");
+$result = $db1->query("SELECT*FROM products");
 ?>
 
 <div class = "purchaseHistory">
@@ -23,7 +23,7 @@ $result = $db1->query("SELECT*FROM product");
                         <td><?php echo $row['student_number'] ?></td>
                         <td><?php echo $row['size'] ?></td>
                         <td><?php echo $row['sex'] ?></td>
-                        <td><?php echo $row['timestamp'] ?></td>
+                        <td><?php echo $row['time_stamp'] ?></td>
                     </tr>
                     <?php
                 }

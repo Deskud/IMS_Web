@@ -5,6 +5,6 @@ session_unset();
 
 session_destroy();
 
-header("Location: ../Login.php");
+header("Location: ../Login.php");//Balik sa Login page pag pinindot yung Logout button.
 
 ?>
