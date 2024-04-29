@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         
-        <!-- Kada 5 seconds mag re-refresh yung page mapakita yung new data na na input sa database (temporary solution) --> <meta http-equiv="refresh" content="30; url= Report.php"  /> 
+        <!-- Kada 30 seconds mag re-refresh yung page mapakita yung new data na na input sa database (temporary solution) --> <meta http-equiv="refresh" content="30; url= Report.php"  /> 
         <link rel="stylesheet" type="text/css" href="css/IMSstyle.css">
         <script src="https://kit.fontawesome.com/883b8ee9d9.js" crossorigin="anonymous"></script>
         
@@ -29,9 +29,7 @@
                         <?php include ('Parts/TableHistory.php')?>
                         </div>
                 </div>
-
             </div>
         </div>
-    <script src="DashboardScripts.js"></script>
     </body>
 </html>

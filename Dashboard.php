@@ -27,16 +27,11 @@
                     <div class="dashboardContent_Main">
                         <div>
                             <div class="charts">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at nisl ultricies, ornare purus sit amet, luctus nulla.</p>
                             </div>
                         </div>
-                            <div id="downloadbutton">
-                                <button id="filedown">Download as CSV File</button> 
-                            </div>
                     </div>
                 </div>
             </div>
         </div>
-    <script src="DashboardScripts.js"></script>
     </body>
 </html>

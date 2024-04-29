@@ -15,6 +15,9 @@
                             <a href="Report.php"><i class="fa-solid fa-arrow-trend-up"></i><span class="menuText" > Purchase History</span></a>
                         </li>
                         <li >
+                            <a href="Products.php"><i class="fa-solid fa-shirt"></i><span class="menuText" > Products</span></a>
+                        </li>
+                        <li >
                             <a href="Notif.php"><i class="fa-solid fa-bell"></i><span class="menuText" > Notification</span></a>
                         </li>
                         <li>

@@ -29,6 +29,5 @@
 
             </div>
         </div>
-    <script src="DashboardScripts.js"></script>
     </body>
 </html>
