@@ -10,7 +10,8 @@
        $username = $_POST['username'];
        $password = $_POST['password'];
 
-        $query = 'SELECT * FROM admins WHERE admins.email = "'. $username .'" AND admins.password = "'. $password .'" ';//Kinukuha sa database yung email at password pag di existing di ma a-access dashboard
+        $query = 'SELECT * FROM admins
+                    WHERE admins.email = "'. $username .'" AND admins.password = "'. $password .'" ';//Kinukuha sa database yung email at password pag di existing di ma a-access dashboard
         $stmt = $db1 -> prepare($query);
         $result = $stmt->execute();
         

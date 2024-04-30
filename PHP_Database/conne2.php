@@ -1,7 +1,7 @@
 <?php
 $servername = 'localhost';
 $username = 'root';
-$dbname = 'uniform_stocks';
+$dbname = 'vending_machine';
 $password = '';
    
 

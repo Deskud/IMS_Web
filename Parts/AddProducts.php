@@ -6,8 +6,8 @@
 
 
         $product_name = $_POST['name'];
-        $product_price = $_POST['price'];
         $product_size = $_POST['size'];
+        $product_price = $_POST['price'];
         $product_quantity = $_POST['quantity'];
 
 
@@ -17,7 +17,8 @@
 
         }
         else{
-            $insert = "INSERT INTO uniform_products(product_name, price, product_size, product_quantity) VALUES('$product_name', '$product_price', '$product_size', '$product_quantity')"; 
+            $insert = "INSERT INTO products(product_name, product_size, price, quantity)
+                        VALUES('$product_name', '$product_size ', '$product_price', '$product_quantity')"; 
 
             $adding = mysqli_query($dbADD, $insert);
 
@@ -43,7 +44,7 @@
     //Deletes the data from table and the database. Basis is id/product_id
     if(isset($_GET['delete'])){ 
         $id = $_GET['delete'];
-        mysqli_query($dbADD, "DELETE FROM uniform_products WHERE product_id = $id");
+        mysqli_query($dbADD, "DELETE FROM products WHERE product_id = $id");
         header('location:Products.php');
 
     }
@@ -80,53 +81,28 @@
 
 <?php
 
-$select = mysqli_query($dbADD, "SELECT * FROM uniform_products");
+$select = mysqli_query($dbADD, "SELECT * FROM products");
 ?>
 
 
 <div class= "Productaddtable">
     <table class="display_added_prod">
         <tr>
-            <td>
-                Product Id
-            </td>
-            <td>
-                Product Name
-            </td>
-            <td>
-                Product Price
-            </td>
-            <td>
-                Product Size
-            </td>
-            <td>
-                Product Quantity
-            </td>
-            <td colspan="2">
-                Action
-            </td>
+            <td>Product Id</td>
+            <td>Product</td>
+            <td>Size</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td colspan="2">Action</td>
         </tr>
 
-        <?php
-
-    while($row = mysqli_fetch_assoc($select)){
-    ?>     
+        <?php while($row = mysqli_fetch_assoc($select)){ ?>     
             <tr>
-                <td>
-                    <?php echo $row['product_id'] ?>
-                </td>
-                <td>
-                    <?php echo $row['product_name'] ?>
-                </td>
-                <td>
-                    P<?php echo $row['price'] ?>
-                </td>
-                <td>
-                    <?php echo $row['product_size'] ?>
-                </td>
-                <td>
-                    <?php echo $row['product_quantity'] ?>
-                </td>
+                <td><?php echo $row['product_id'] ?></td>
+                <td><?php echo $row['product_name'] ?></td>
+                <td><?php echo $row['product_size'] ?></td>
+                <td>P<?php echo $row['price'] ?></td>
+                <td><?php echo $row['quantity'] ?></td>
                 <td>
                     <a href="AdminEdit.php?edit=<?php echo $row['product_id'];?>"class="btnEdit"><i class="fa-solid fa-pen-to-square"></i>Edit</i></a>
                     <a href="Products.php?delete=<?php echo $row['product_id'];?>"class="btnEdit"><i class="fa-solid fa-trash"></i>Delete</i></a>

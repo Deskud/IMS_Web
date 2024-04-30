@@ -27,6 +27,15 @@
                     <div class="dashboardContent_Main">
                         <div>
                             <div class="charts">
+                                <table>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Size</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                    </tr>
+                                    <?php include('fetch_data.php'); ?>
+                                </table>
                             </div>
                         </div>
                     </div>
